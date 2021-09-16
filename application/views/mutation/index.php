@@ -32,7 +32,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				<div class="container-fluid">
 					<?php if(isset($_SESSION['input_sukses'])){ ?>
 					<div class="row mb-3">
-						<div class="col-lg-7">
+						<div class="col-lg-12">
 							
 									<div class="alert alert-success">
 										<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -43,7 +43,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					</div>	
 					<?php } ?>				
 					<div class="row">
-						<div class="col-lg-7">
+						<div class="col-lg-12">
 				            <form class="card card-info" action="<?php echo base_url('item/postmutation'); ?>" method="post">
 					          <div class="card-header">
 					            <h3 class="card-title">Add Mutation</h3>
@@ -75,10 +75,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					              </div>
 					            </div>
 					            <div class="row mb-3">
-					            	<div class="col-lg-3">
+					            	<div class="col-lg-5">
 					            		<a href="#" onclick="additems()" class="btn btn-warning"> + Add Item</a>
-					            	</div>
-					            	<div class="col-lg-3">
 					            		<a href="#" onclick="deleteRow()" class="btn btn-danger"> - Delete Item</a>
 					            	</div>
 					            </div>
