@@ -9,7 +9,13 @@ How To Install this Project
 	- git clone https://github.com/mohrahmatullah/erp-stock.git Melalui terminal
 	- buat database
 		contoh database = stock-erp
-	- Untuk databasenya silahkan setting pada file config->database.php
+	- Silahkan eksport database 
+
+		sql->stock-erp.sql
+	
+	- Untuk databasenya silahkan setting 
+
+			config->database.php
 
 			$db['default'] = array(
 				'dsn'	=> '',
