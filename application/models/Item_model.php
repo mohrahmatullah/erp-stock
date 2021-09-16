@@ -23,9 +23,9 @@ class Item_model extends CI_Model
 
 	public function get_item_search()
 	{
-		if(!empty($this->input->get('search')) ){
+		if(!empty($this->input->post('search')) ){
 			$this->db->from("item_cc");
-			$this->db->where('cc', $this->input->get('search'));
+			$this->db->where('cc', $this->input->post('search'));
 			$query = $this->db->get();
 		}else{
 			$this->db->from("item_cc");

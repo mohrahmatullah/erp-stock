@@ -32,7 +32,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-7">
-							<form class="card card-info" action="<?php echo base_url('item/search'); ?>" enctype="multipart/form-data">
+							<form class="card card-info" action="<?php echo base_url('item/search'); ?>" method="post">
 				              <div class="card-header">
 				                <h3 class="card-title">Form Search</h3>
 				              </div>
@@ -42,7 +42,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				                    Cost Center
 				                  </div>
 				                  <div class="col-7">
-									<select class="custom-select rounded-0" id="exampleSelectRounded0" name="search" method="get">
+									<select class="custom-select rounded-0" id="exampleSelectRounded0" name="search">
 										<option value="">Select Cost center</option>
 										<?php foreach($database as $db) : ?>  
 											<option value="<?php echo $db->code; ?>"><?php echo $db->code; ?></option>
