@@ -60,8 +60,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 											  	?>
 											    <?php foreach($database as $key => $db) : ?>
 											    	<?php 
-	                    								$sum_balance_qty += $db->debitqty + $db->creditqty; 
-	                    								$sum_balance_weight += $db->debitweight + $db->creditweight;
+	                    								$sum_balance_qty += $db->debitqty - $db->creditqty; 
+	                    								$sum_balance_weight += $db->debitweight - $db->creditweight;
 	                    							?>
 												    <tr>
 												      <td><?php echo $db->createdate; ?></td>
